@@ -11,7 +11,6 @@ Se readme-fil for detaljer om hvordan jeg videreutviklet spillet
 # behandling av maten (kan med fordel flytte noe av det til food.py)
 
 # import required modules
-# from tkinter import Y # TODO: sjekke om dette brukes, evt. hvor
 import turtle
 import time
 import random
