@@ -1,16 +1,18 @@
-VIDEREUTVIKLET BASERT PÅ KODE/INSPIRASJON FRA: https://www.geeksforgeeks.org/create-a-snake-game-using-turtle-in-python/
-Denne koden er også lagt ved i filen 'originalSnakeGeeks.py'
-
 Spillet STARTES FRA 'main.py'
 Enjoy!
 
-DET FINNES EN VERSJON 4.0 i annen mappe. Betydelig forbedret kode og nye funksjoner, bl.a. 2-player-mode
-
 Utviklingshistorikk:
 --------------------
+Versjon 4.0
+- klar for oppdatert showcase
+- velg antall spillere fra startmeny
+- unngaa at mat plasseres under en slange
+- spillere kan krasje med hverandre
+- utviklet scoring i 2-player-mode og display av meldinger
+- highscore oppdateres bare mellom hvert spill
 
 Versjon 3.0
-- klargjort for showcase :-)
+- klargjort for foerste showcase
 - forbedret hvordan hastighet oeker gjennom spillet (opp til en viss grense)
 
 Versjon 2.7
@@ -45,16 +47,13 @@ Senere har jeg også utviklet (per versjon 2.3)
 - brukerstyrt mulighet for å avslutte spillet med Q
 
 Ideer til videreutvikling:
-- 2-player-modus
-- unngaa at mat kommer under slangen eller paa toppen av annen mat
-- legge til info om game-mode, level (fart) etc.
 - lage algoritme for styring av en slange ('datastyrt'), slik at man kan spille mot den
-- back-end-design: legge flere funksjoner og variabler til food-klassen (posisjonering?)
+- legge til info på skjerm om game-mode, level (fart) etc.
 - vanskelighetsgrad mulig aa velge fra start
 - pause-vindu med statistikk (lengde på slange, spilletid, evt. pausetid, evt. mer)
 - bug-fiksing: ved raske trykk etter hverandre f.eks. opp+venstre når beveger seg mot
     hoyre, vil slangen kollidere i egen hale, tror jeg. Kanskje ok at det er slik, men kan fikses.
-- ulike nerde-temaer, for eksempel spise neste siffer i pi for (ekstra) bonus
+- innføre ulike spillkonsepter, for eksempel spise neste siffer i pi for (ekstra) bonus
 - flytte start-meny til selve turtle-vinduet
 - legge mat i et synlig eller usynlig rutenett
 - highscore-liste (skrive til/lese fra en egen fil)
