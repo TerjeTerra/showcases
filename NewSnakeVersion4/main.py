@@ -131,7 +131,7 @@ def forSnakes(method_name, *parameters): # * arbitrary number of parameters
     return results
 
 def withinBorder():
-    tooClose = UNIT * 0.5
+    tooClose = int(0.5 * UNIT)
     XLimit = XBORDER-tooClose
     YLimit = YBORDER-tooClose
     return forSnakes('isWithin', XLimit, YLimit)
@@ -141,7 +141,7 @@ def withinBorder():
 # *********************************
     
 # Help methods for getting random coordinates within (min distance from) border
-minFromBorder = 1.5 * UNIT
+minFromBorder = int(1.5 * UNIT)
 def getRndX():    
     x = random.randint(-(XBORDER - minFromBorder), (XBORDER - minFromBorder))
     return x
